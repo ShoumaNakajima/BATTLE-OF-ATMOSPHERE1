@@ -1,9 +1,7 @@
 ﻿#ifndef CHARACTER_H_
 #define CHARACTER_H_
 
-#include "../BATTLE-OF-ATMOSPHERE/DirectX.h"
-#include "../BATTLE-OF-ATMOSPHERE/Main.h"
-//#include "../BATTLE-OF-ATMOSPHERE/MapChip.h"
+#include <Windows.h>
 
 enum JUMP
 {

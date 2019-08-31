@@ -1,6 +1,12 @@
-﻿#include "../BATTLE-OF-ATMOSPHERE/GameScene.h"
+﻿#include "GameScene.h"
+
 #include <stdlib.h>
 #include <time.h>
+
+#include "Main.h"
+#include "Stage.h"
+#include "Character.h"
+#include "Collision.h"
 
 //DRAWMAP drawmap;
 //SPACEMAN1P spaceman1p;

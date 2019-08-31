@@ -1,5 +1,4 @@
-﻿#include "../BATTLE-OF-ATMOSPHERE/Collision.h"
-//#include "../BATTLE-OF-ATMOSPHERE/Stage.h"
+﻿#include "Collision.h"
 
 
 SPACEMAN spaceman;

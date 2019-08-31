@@ -1,6 +1,4 @@
-﻿#include "../BATTLE-OF-ATMOSPHERE/TitleScene.h"
-#include"../BATTLE-OF-ATMOSPHERE/MapChip.h"
-
+﻿#include "TitleScene.h"
 
 //タイトルのフェーズの宣言
 TITLE::SCENE_PHASE phase = TITLE::LOAD;

@@ -1,10 +1,12 @@
-﻿#include "../BATTLE-OF-ATMOSPHERE/Main.h"
-#include "../BATTLE-OF-ATMOSPHERE/DirectX.h"
+﻿#include "Main.h"
+#include "DirectX.h"
 
-#include "../BATTLE-OF-ATMOSPHERE/TitleScene.h"
-#include "../BATTLE-OF-ATMOSPHERE/HelpScene.h"
-#include "../BATTLE-OF-ATMOSPHERE/GameScene.h"
-#include "../BATTLE-OF-ATMOSPHERE/ResultScene.h"
+#include "TitleScene.h"
+#include "HelpScene.h"
+#include "GameScene.h"
+#include "ResultScene.h"
+#include "Stage.h"
+#include "Collision.h"
 
 
 //ここ出来ればなくしたい

@@ -1,5 +1,6 @@
-﻿#include "../BATTLE-OF-ATMOSPHERE/Stage.h"
-#include "../BATTLE-OF-ATMOSPHERE/MapChip.h"
+﻿#include "Stage.h"
+
+#include "MapChip.h"
 
 //DRAWMAP drawmap;
 //DRAW draw;

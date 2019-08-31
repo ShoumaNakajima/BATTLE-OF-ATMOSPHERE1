@@ -4,15 +4,9 @@
 #include <windows.h>
 #include <d3d9.h>
 
-#include "../BATTLE-OF-ATMOSPHERE/Main.h"
-#include "../BATTLE-OF-ATMOSPHERE/DirectX.h"
-#include "../BATTLE-OF-ATMOSPHERE/Draw.h"
+#include "Draw.h"
 
-#include "../BATTLE-OF-ATMOSPHERE/Character.h"
-#include "../BATTLE-OF-ATMOSPHERE/Stage.h"
-#include "../BATTLE-OF-ATMOSPHERE/Collision.h"
-
-enum TEX 
+enum TEX
 {
 	TITLE_BG,
 	TITLE_UI,
@@ -25,7 +19,7 @@ enum TEX
 	MAXTEX,
 };
 
-enum SCENE 
+enum SCENE
 {
 	TITLE_SCENE,
 	HELP_SCENE,

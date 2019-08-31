@@ -1,4 +1,6 @@
-﻿#include"../BATTLE-OF-ATMOSPHERE/Character.h"
+﻿#include "Character.h"
+
+#include "Main.h"
 
 VOID SPACEMAN::SpaceManRelease(CHAR_* char_)
 {

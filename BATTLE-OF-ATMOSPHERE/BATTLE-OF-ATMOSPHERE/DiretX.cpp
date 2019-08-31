@@ -1,5 +1,5 @@
 ﻿
-#include "../BATTLE-OF-ATMOSPHERE/DirectX.h"
+#include "DirectX.h"
 
 #pragma comment (lib,"winmm.lib")
 #pragma comment (lib,"d3d9.lib")

@@ -4,7 +4,7 @@
 #include <windows.h>
 #include <d3d9.h>
 
-#include "../BATTLE-OF-ATMOSPHERE/DirectX.h"
+#include "DirectX.h"
 
 //カスタムバーテックス
 struct CUSTOMVERTEX 

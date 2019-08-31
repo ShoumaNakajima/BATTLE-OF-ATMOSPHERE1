@@ -1,13 +1,7 @@
 ﻿#ifndef GAME_SCENE_H
 #define GAME_SCENE_H
 
-#include "../BATTLE-OF-ATMOSPHERE/DirectX.h"
-#include "../BATTLE-OF-ATMOSPHERE/Main.h"
-#include "../BATTLE-OF-ATMOSPHERE/MapChip.h"
-#include "../BATTLE-OF-ATMOSPHERE/Draw.h"
-#include "../BATTLE-OF-ATMOSPHERE/Character.h"
-#include "../BATTLE-OF-ATMOSPHERE/Stage.h"
-#include "../BATTLE-OF-ATMOSPHERE/Collision.h"
+#include <Windows.h>
 
 class GAME 
 {

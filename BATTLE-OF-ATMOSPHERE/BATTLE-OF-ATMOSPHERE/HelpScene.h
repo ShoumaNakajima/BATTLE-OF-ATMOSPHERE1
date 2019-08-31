@@ -1,8 +1,7 @@
 ﻿#ifndef HELP_SCENE_H
 #define HELP_SCENE_H
 
-#include "../BATTLE-OF-ATMOSPHERE/DirectX.h"
-#include "../BATTLE-OF-ATMOSPHERE/Main.h"
+#include <Windows.h>
 
 class HELP 
 {

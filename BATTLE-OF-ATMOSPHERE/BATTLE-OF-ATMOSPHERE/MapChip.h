@@ -1,11 +1,6 @@
 ﻿#ifndef MAPCHIP_H
 #define MAPCHIP_H
 
-#include "../BATTLE-OF-ATMOSPHERE/Main.h"
-
-#include<iostream>
-#include<stdio.h>
-
 #define MAP_SIZE_WIDTH (30.f)		// MAPの横幅(値はチップ数)
 #define MAP_SIZE_HEIGHT (17.f)		// MAPの縦幅(値はチップ数)
 #define MAPCHIP_WIDTH (64.f)		// マップチップの横幅
@@ -14,7 +9,11 @@
 #define TEXTURE_HEIGHT (128.f)      // 読み込んだテクスチャの縦幅
 #define DRAW_WIDTH (64.f)           // 描画する横幅
 #define DRAW_HEIGHT (64.f)          // 描画する縦幅
+#include <Windows.h>
+#include <iostream>
+#include <stdio.h>
 
+#include "Main.h"
 
 const INT map_size_width = 30;
 const INT map_size_height = 17;

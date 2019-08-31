@@ -1,4 +1,6 @@
-﻿#include "../BATTLE-OF-ATMOSPHERE/HelpScene.h"
+﻿#include "HelpScene.h"
+
+#include "Main.h"
 
 //リザルトのフェーズの移動
 VOID HELP::Help_Scene() 

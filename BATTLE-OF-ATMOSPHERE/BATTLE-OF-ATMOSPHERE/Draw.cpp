@@ -1,6 +1,6 @@
-﻿#include "../BATTLE-OF-ATMOSPHERE/Main.h"
-#include "../BATTLE-OF-ATMOSPHERE/Draw.h"
+﻿#include "Draw.h"
 
+#include "Main.h"
 
 VOID DRAW::Rotate(CUSTOMVERTEX  original[], CUSTOMVERTEX rotatevertex[], DOUBLE degree) 
 {

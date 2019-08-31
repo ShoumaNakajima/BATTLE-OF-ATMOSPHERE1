@@ -1,12 +1,10 @@
 ﻿#ifndef COLLISION_H_
 #define COLLISION_H_
 
-#include "../BATTLE-OF-ATMOSPHERE/DirectX.h"
-#include "../BATTLE-OF-ATMOSPHERE/Main.h"
-#include "../BATTLE-OF-ATMOSPHERE/Character.h"
-#include "../BATTLE-OF-ATMOSPHERE/Stage.h"
+#include <Windows.h>
 
-//extern SPACEMAN spaceman;
+#include "Stage.h"
+#include "Character.h"
 
 class COLLISION
 {
