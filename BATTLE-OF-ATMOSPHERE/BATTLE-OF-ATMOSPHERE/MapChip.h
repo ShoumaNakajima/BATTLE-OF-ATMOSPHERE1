@@ -1,14 +1,6 @@
 ﻿#ifndef MAPCHIP_H
 #define MAPCHIP_H
 
-#define MAP_SIZE_WIDTH (30.f)		// MAPの横幅(値はチップ数)
-#define MAP_SIZE_HEIGHT (17.f)		// MAPの縦幅(値はチップ数)
-#define MAPCHIP_WIDTH (64.f)		// マップチップの横幅
-#define MAPCHIP_HEIGHT (64.f)		// マップチップの縦幅
-#define TEXTURE_WIDTH (128.f)       // 読み込んだテクスチャの横幅
-#define TEXTURE_HEIGHT (128.f)      // 読み込んだテクスチャの縦幅
-#define DRAW_WIDTH (64.f)           // 描画する横幅
-#define DRAW_HEIGHT (64.f)          // 描画する縦幅
 #include <Windows.h>
 #include <iostream>
 #include <stdio.h>
