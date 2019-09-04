@@ -7,47 +7,51 @@
 
 
 
-VOID STAGE::InitStage()
+VOID STAGE::InitStageBlock()
 {
-	/*
-	for (INT i = 0; i < map_size_height; i++) {
-		for (INT j = 0; j < map_size_width; j++) {
-			drawmap.map[i][j].chip_id = drawmap.init_map[i][j];
-		}
-	}
-
-	DRAWMAP::BLOCK* array_map[map_size_height];
-
-	for (INT i = 0; i < map_size_height;i++) {
-		array_map[i] = drawmap.map[i];
-	}
-
-	drawmap.DrawMapChip(MAP_SIZE_WIDTH, MAP_SIZE_HEIGHT, TEXTURE_WIDTH, TEXTURE_HEIGHT, MAPCHIP_WIDTH, MAPCHIP_HEIGHT, DRAW_WIDTH, DRAW_HEIGHT, 0.0f, 0.0f, GAME_STAGE, array_map);
-	*/
-
-	for (int i = 0; i < BLOCK_QUANTITY; i++)
-	{
-		block[i].x = -BLOCK_SIZE;
-		block[i].y = 0.0f;
-	}
-
 	for (int i = 0; i < 5; i++) {
 		block[i].x = (6 + i) * BLOCK_SIZE;
 		block[i].y = 4 * BLOCK_SIZE;
 	}
-
 	for (int i = 0; i < 11; i++) {
 		block[i + 5].x = (3 + i) * BLOCK_SIZE;
 		block[i + 5].y = 8 * BLOCK_SIZE;
 	}
 }
 
-VOID STAGE::MakeStage() 
+
+VOID STAGE::InitBlock()
 {
+	//ブロックの初期値
+	for (INT i = 0; i < BLOCK_QUANTITY;i++)
+	{
+		block[i].x = -10000.f;//初期値適当
+		block[i].y = -10000.f;//初期値適当
+		block[i].tu = 0.0f;
+		block[i].tv = 0.0f;
+		block[i].width = BLOCK_SIZE;
+		block[i].height = BLOCK_SIZE;
+	}
+	//クリエイトブロックの初期値
+	for (INT i = 0;i < CREATE_BLOCK_QUANITITY;i++) 
+	{
+		create_block[i].x = -10000.f;//初期値適当
+		create_block[i].y = -10000.f;//初期値適当
+		create_block[i].tu = 96.f / 192.f;
+		create_block[i].tv = 0.0f;
+		create_block[i].width = BLOCK_SIZE;
+		create_block[i].height = BLOCK_SIZE;
+	}
 
+	InitStageBlock();
+}
 
-
-
+VOID STAGE::MakeStage(BLOCK* block)
+{
+	if (block->y == WINDOW_HEIGHT) {
+		block->x = (float)(rand() % (1920 - (int)(BLOCK_SIZE)));
+		block->y = -BLOCK_SIZE;
+	}
 }
 
 
@@ -66,6 +70,6 @@ VOID STAGE::FallBlock()
 
 VOID STAGE::DrawBlock(BLOCK block)
 {
-	draw.Draw(block.x,block.y,0xffffffff,block.tu,block.tv,BLOCK_SIZE,BLOCK_SIZE,128.f/248.f, 128.f/248.f,1,0);
+	draw.Draw(block.x,block.y,0xffffffff,block.tu,block.tv,block.width,block.height,96.f/192.f, 96.f/192.f,GAME_STAGE,0);
 }
 

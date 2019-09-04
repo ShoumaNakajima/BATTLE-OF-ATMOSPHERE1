@@ -7,7 +7,7 @@
 #include "ResultScene.h"
 #include "Stage.h"
 #include "Collision.h"
-
+#include "Create.h"
 
 //ここ出来ればなくしたい
 DIRECTX directx;
@@ -19,7 +19,7 @@ RESULT result;
 STAGE stage;
 SPACEMAN spaceman;
 COLLISION collision;
-
+CREATE create;
 
 
 SCENE scene = TITLE_SCENE;
@@ -100,7 +100,8 @@ HWND GenerateWindow(HWND* hWnd, HINSTANCE* hInstance, const TCHAR* p_api_name)
 	return *hWnd = CreateWindow(
 		p_api_name,							//クラスの名前
 		p_api_name,							//アプリケーションのタイトル
-		WS_VISIBLE | WS_POPUP,	//ウィンドウのスタイル
+		(WS_OVERLAPPEDWINDOW ^ WS_THICKFRAME) | WS_VISIBLE,	//ウィンドウのスタイル
+//		WS_VISIBLE | WS_POPUP,	//ウィンドウのスタイル
 		0,		            				//Xの位置
 		0,		            				//Yの位置
 		WINDOW_WIDTH,								//幅

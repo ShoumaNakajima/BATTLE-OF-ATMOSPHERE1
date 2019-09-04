@@ -10,10 +10,13 @@ class COLLISION
 {
 public:
 
-	VOID Hit_Block(BLOCK block, CHAR_* char_, JUMP jump);
+	VOID Hit_Block(BLOCK block, CHAR_* char_);
 
+	VOID Hit_Move(BLOCK block, CHAR_* char_, FLOAT movement_x, FLOAT movement_y);
 
+	VOID Hit_Char(CHAR_* char_one, CHAR_* char_two);
 
+	VOID Hit_Item(CHAR_* char_, ITEM_* item);
 
 };
 

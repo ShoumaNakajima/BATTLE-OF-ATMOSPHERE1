@@ -7,23 +7,18 @@ class GAME
 {
 public:
 
-	//座標
-	INT m_pos_x = 0;
-	INT m_pos_y = 0;
 
-	//自機移動スピード
-	INT m_spaceman_speed = 4;
 	//スクロールの可視範囲
 	FLOAT game_bg_tu = 0.25f;
-	
 	INT fc_background = 0;
 	
+	INT fc_cereate_one = 0;
+	INT fc_cereate_two = 0;
+
+
 	//スクロールのスピード
 	#define SCROLL_SPEED  -0.001f
 
-	//月の重力
-	INT m_gravity = 1.6;
-	
 	VOID Game_Scene();
 
 	VOID Loading();

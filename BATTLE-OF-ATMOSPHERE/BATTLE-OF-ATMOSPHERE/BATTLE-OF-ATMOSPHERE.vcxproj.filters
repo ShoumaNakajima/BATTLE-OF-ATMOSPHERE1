@@ -9,12 +9,11 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="ソースファイル\Scene">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="ソースファイル\feature">
+    <Filter Include="ソースファイル\Feature">
       <UniqueIdentifier>{b227327b-a2ea-4776-bf9d-16bdf7270799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\Scene">
+      <UniqueIdentifier>{39c93f7e-0461-444f-bb99-dd74a6898e38}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -27,47 +26,47 @@
     <ClCompile Include="Draw.cpp">
       <Filter>ソースファイル\Engine</Filter>
     </ClCompile>
+    <ClCompile Include="MapChip.cpp">
+      <Filter>ソースファイル\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Impact.cpp">
+      <Filter>ソースファイル\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="Create.cpp">
+      <Filter>ソースファイル\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="Gravity.cpp">
+      <Filter>ソースファイル\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="Jet.cpp">
+      <Filter>ソースファイル\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="Powerup.cpp">
+      <Filter>ソースファイル\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="Ice.cpp">
+      <Filter>ソースファイル\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>ソースファイル\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>ソースファイル\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>ソースファイル\Feature</Filter>
+    </ClCompile>
     <ClCompile Include="GameScene.cpp">
       <Filter>ソースファイル\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="TitleScene.cpp">
+    <ClCompile Include="HelpScene.cpp">
       <Filter>ソースファイル\Scene</Filter>
     </ClCompile>
     <ClCompile Include="ResultScene.cpp">
       <Filter>ソースファイル\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="MapChip.cpp">
-      <Filter>ソースファイル\Engine</Filter>
-    </ClCompile>
-    <ClCompile Include="HelpScene.cpp">
+    <ClCompile Include="TitleScene.cpp">
       <Filter>ソースファイル\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="Impact.cpp">
-      <Filter>ソースファイル\feature</Filter>
-    </ClCompile>
-    <ClCompile Include="Create.cpp">
-      <Filter>ソースファイル\feature</Filter>
-    </ClCompile>
-    <ClCompile Include="Gravity.cpp">
-      <Filter>ソースファイル\feature</Filter>
-    </ClCompile>
-    <ClCompile Include="Jet.cpp">
-      <Filter>ソースファイル\feature</Filter>
-    </ClCompile>
-    <ClCompile Include="Powerup.cpp">
-      <Filter>ソースファイル\feature</Filter>
-    </ClCompile>
-    <ClCompile Include="Ice.cpp">
-      <Filter>ソースファイル\feature</Filter>
-    </ClCompile>
-    <ClCompile Include="Stage.cpp">
-      <Filter>ソースファイル\feature</Filter>
-    </ClCompile>
-    <ClCompile Include="Character.cpp">
-      <Filter>ソースファイル\feature</Filter>
-    </ClCompile>
-    <ClCompile Include="Collision.cpp">
-      <Filter>ソースファイル\feature</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -77,11 +76,38 @@
     <ClInclude Include="Main.h">
       <Filter>ソースファイル\Engine</Filter>
     </ClInclude>
-    <ClInclude Include="ResultScene.h">
-      <Filter>ソースファイル\Scene</Filter>
+    <ClInclude Include="Draw.h">
+      <Filter>ソースファイル\Engine</Filter>
     </ClInclude>
-    <ClInclude Include="TitleScene.h">
-      <Filter>ソースファイル\Scene</Filter>
+    <ClInclude Include="Impact.h">
+      <Filter>ソースファイル\Feature</Filter>
+    </ClInclude>
+    <ClInclude Include="Create.h">
+      <Filter>ソースファイル\Feature</Filter>
+    </ClInclude>
+    <ClInclude Include="Gravity.h">
+      <Filter>ソースファイル\Feature</Filter>
+    </ClInclude>
+    <ClInclude Include="Jet.h">
+      <Filter>ソースファイル\Feature</Filter>
+    </ClInclude>
+    <ClInclude Include="Powerup.h">
+      <Filter>ソースファイル\Feature</Filter>
+    </ClInclude>
+    <ClInclude Include="Ice.h">
+      <Filter>ソースファイル\Feature</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>ソースファイル\Feature</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>ソースファイル\Feature</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>ソースファイル\Feature</Filter>
+    </ClInclude>
+    <ClInclude Include="MapChip.h">
+      <Filter>ソースファイル\Engine</Filter>
     </ClInclude>
     <ClInclude Include="GameScene.h">
       <Filter>ソースファイル\Scene</Filter>
@@ -89,38 +115,11 @@
     <ClInclude Include="HelpScene.h">
       <Filter>ソースファイル\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="Draw.h">
-      <Filter>ソースファイル\Engine</Filter>
+    <ClInclude Include="ResultScene.h">
+      <Filter>ソースファイル\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="Impact.h">
-      <Filter>ソースファイル\feature</Filter>
-    </ClInclude>
-    <ClInclude Include="Create.h">
-      <Filter>ソースファイル\feature</Filter>
-    </ClInclude>
-    <ClInclude Include="Gravity.h">
-      <Filter>ソースファイル\feature</Filter>
-    </ClInclude>
-    <ClInclude Include="Jet.h">
-      <Filter>ソースファイル\feature</Filter>
-    </ClInclude>
-    <ClInclude Include="Powerup.h">
-      <Filter>ソースファイル\feature</Filter>
-    </ClInclude>
-    <ClInclude Include="Ice.h">
-      <Filter>ソースファイル\feature</Filter>
-    </ClInclude>
-    <ClInclude Include="Stage.h">
-      <Filter>ソースファイル\feature</Filter>
-    </ClInclude>
-    <ClInclude Include="Character.h">
-      <Filter>ソースファイル\feature</Filter>
-    </ClInclude>
-    <ClInclude Include="Collision.h">
-      <Filter>ソースファイル\feature</Filter>
-    </ClInclude>
-    <ClInclude Include="MapChip.h">
-      <Filter>ソースファイル\Engine</Filter>
+    <ClInclude Include="TitleScene.h">
+      <Filter>ソースファイル\Scene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

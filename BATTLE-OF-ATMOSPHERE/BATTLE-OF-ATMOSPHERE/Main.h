@@ -35,11 +35,6 @@ extern SCENE scene;
 
 extern DRAW draw;
 
-//extern SPACEMAN spaceman;
-//
-//extern STAGE stage;
-//
-//extern COLLISION collision;
 
 //WinMain関数
 INT WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ PSTR lpCmdline, _In_ INT nCmdShow);
